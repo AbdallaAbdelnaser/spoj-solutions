@@ -60,7 +60,7 @@ public class Main {
 				int tx = x + a[i];
 				int ty = y + b[i];
 				if (tx >= 0 && tx < r && ty >= 0 && ty < c && arr[tx][ty] != 'X'
-						&& dis[tx][ty] > (dis[x][y] + arr[tx][ty] - 48)) {
+						&& dis[tx][ty] > (dis[x][y] + arr[tx][ty] - 48)) { // '0' = 48 in ascii
 					q.push(ty);
 
 					q.push(tx);
